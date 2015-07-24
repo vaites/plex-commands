@@ -1,6 +1,6 @@
 {
     "Title": "Commands",
-    "ApplicationsTitle": "Commands Applications",
+    "ApplicationsTitle": "Commands",
 
     "MenuShutdown": "Shutdown server",
     "MenuReboot": "Reboot server",
@@ -12,5 +12,5 @@
     "LogReboot": "Computer is going to reboot",
     "LogHibernate": "Computer is hibernating",
     "LogSuspend": "Computer is suspending",
-    "LogForceUpdate": "Content refresh started"
+    "LogForceRefresh": "Content refresh started"
 }

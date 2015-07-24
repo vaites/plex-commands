@@ -1,0 +1,16 @@
+{
+    "Title": "Comandos",
+    "ApplicationsTitle": "Comandos",
+
+    "MenuShutdown": "Apagar servidor",
+    "MenuReboot": "Reiniciar servidor",
+    "MenuHibernate": "Hibernar servidor",
+    "MenuSuspend": "Suspender servidor",
+    "MenuForceRefresh": "Forzar actualización",
+
+    "LogShutdown": "El equipo se está apagando",
+    "LogReboot": "El equipo va a reiniciarse",
+    "LogHibernate": "El equipo va a hibernarse",
+    "LogSuspend": "El equipo va a suspenderse",
+    "LogForceUpdate": "El contenido se está actualizando"
+}
