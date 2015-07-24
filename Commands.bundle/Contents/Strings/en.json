@@ -1,0 +1,16 @@
+{
+    "Title": "Commands",
+    "ApplicationsTitle": "Commands Applications",
+
+    "MenuShutdown": "Shutdown server",
+    "MenuReboot": "Reboot server",
+    "MenuHibernate": "Hibernate server",
+    "MenuSuspend": "Suspend server",
+    "MenuForceRefresh": "Force refresh",
+
+    "LogShutdown": "Computer is shutting down",
+    "LogReboot": "Computer is going to reboot",
+    "LogHibernate": "Computer is hibernating",
+    "LogSuspend": "Computer is suspending",
+    "LogForceUpdate": "Content refresh started"
+}
