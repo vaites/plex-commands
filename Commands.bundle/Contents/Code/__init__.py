@@ -1,4 +1,6 @@
 import commands
+import platform
+import os
 
 APPLICATIONS_PREFIX = "/applications/commands"
 
@@ -6,6 +8,8 @@ NAME = L('Title')
 
 ART  = 'art-default.jpg'
 ICON = 'icon-default.png'
+
+OS = platform.system()
 
 ####################################################################################################
 
@@ -90,24 +94,35 @@ def ApplicationsMainMenu():
     return dir
 
 def Shutdown(sender):
-    Log(commands.getoutput('shutdown -h now'))
-
-    return MessageContainer("Shutdown", L('LogShutdown'))
+	if OS == 'Windows':
+		Log(os.system('shutdown -s'))
+	else:
+		Log(commands.getoutput('shutdown -h now'))
+	return MessageContainer("Shutdown", L('LogShutdown'))
 
 def Reboot(sender):
-    Log(commands.getoutput('shutdown -r -h now'))
-
-    return MessageContainer("Reboot", L('LogReboot'))
+	if OS == 'Windows':
+		Log(os.system('shutdown -r'))
+	else:
+		Log(commands.getoutput('shutdown -r -h now'))
+		
+	return MessageContainer("Reboot", L('LogReboot'))
 
 def Hibernate(sender):
-    Log(commands.getoutput('pm-hibernate'))
+	if OS == 'Windows':
+		Log(os.system('shutdown -h'))
+	else:
+		Log(commands.getoutput('pm-hibernate'))
 
-    return MessageContainer("Hibernate", L('LogHibernate'))
+	return MessageContainer("Hibernate", L('LogHibernate'))
 
 def Suspend(sender):
-    Log(commands.getoutput('pm-suspend'))
+	if OS == 'Windows':
+		Log(os.system('shutdown -h'))
+	else:
+		Log(commands.getoutput('pm-suspend'))
 
-    return MessageContainer("Suspend", L('LogSuspend'))
+	return MessageContainer("Suspend", L('LogSuspend'))
 
 def ForceRefresh(sender):
     return MessageContainer("ForceRefresh", L('LogForceRefresh'))
