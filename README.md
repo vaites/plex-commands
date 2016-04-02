@@ -6,7 +6,7 @@ Plex channel to provide useful commands
 Features
 --------
 
-* Works on Linux and Mac OS X
+* Works on Linux, Mac OS X and Windows
 * Commands can be executed from any client
 * Ability to shutdown, restart, hibernate or suspend server
 * Shortcut to refresh all libraries
@@ -15,7 +15,6 @@ Requirements
 ------------
 
 * Plex Media Server 0.9 or higher
-* Linux or Mac OS X server 
 
 Install
 -------
